@@ -1,4 +1,8 @@
 public class Circle extends Shape {
+    public Circle() {
+        this.length = 0;
+    }
+
     public Circle(double length) {
         this.length = length;
     }

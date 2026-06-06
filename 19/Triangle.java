@@ -1,4 +1,8 @@
 public class Triangle extends Shape {
+    public Triangle() {
+        this.length = 0;
+    }
+
     public Triangle(double length) {
         this.length = length;
     }
