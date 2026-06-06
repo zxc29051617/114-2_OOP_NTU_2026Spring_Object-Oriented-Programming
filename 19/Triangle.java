@@ -1,6 +1,6 @@
 public class Triangle extends Shape {
     public Triangle(double length) {
-        setLength(length);
+        this.length = length;
     }
 
     @Override

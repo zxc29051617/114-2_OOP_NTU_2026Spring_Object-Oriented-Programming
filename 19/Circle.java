@@ -1,6 +1,6 @@
 public class Circle extends Shape {
     public Circle(double length) {
-        setLength(length);
+        this.length = length;
     }
 
     @Override
