@@ -1,10 +1,10 @@
 public class Circle extends Shape {
     public Circle() {
-        this.length = 0;
+        super(0);
     }
 
     public Circle(double length) {
-        this.length = length;
+        super(length);
     }
 
     @Override
@@ -15,11 +15,15 @@ public class Circle extends Shape {
     @Override
     public double getArea() {
         double radius = length / 2.0;
-        return Math.PI * radius * radius;
+        return round(Math.PI * radius * radius);
     }
 
     @Override
     public double getPerimeter() {
-        return Math.PI * length;
+        return round(Math.PI * length);
+    }
+
+    private double round(double number) {
+        return Math.round(number * 100.0) / 100.0;
     }
 }

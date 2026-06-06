@@ -1,10 +1,10 @@
 public class Triangle extends Shape {
     public Triangle() {
-        this.length = 0;
+        super(0);
     }
 
     public Triangle(double length) {
-        this.length = length;
+        super(length);
     }
 
     @Override
@@ -14,11 +14,15 @@ public class Triangle extends Shape {
 
     @Override
     public double getArea() {
-        return Math.sqrt(3) * length * length / 4.0;
+        return round(Math.sqrt(3) * length * length / 4.0);
     }
 
     @Override
     public double getPerimeter() {
-        return 3.0 * length;
+        return round(3.0 * length);
+    }
+
+    private double round(double number) {
+        return Math.round(number * 100.0) / 100.0;
     }
 }

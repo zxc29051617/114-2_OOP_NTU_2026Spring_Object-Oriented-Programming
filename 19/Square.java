@@ -1,10 +1,10 @@
 public class Square extends Shape {
     public Square() {
-        this.length = 0;
+        super(0);
     }
 
     public Square(double length) {
-        this.length = length;
+        super(length);
     }
 
     @Override
@@ -14,11 +14,15 @@ public class Square extends Shape {
 
     @Override
     public double getArea() {
-        return length * length;
+        return round(length * length);
     }
 
     @Override
     public double getPerimeter() {
-        return 4.0 * length;
+        return round(4.0 * length);
+    }
+
+    private double round(double number) {
+        return Math.round(number * 100.0) / 100.0;
     }
 }
