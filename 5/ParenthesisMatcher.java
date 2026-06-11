@@ -1,7 +1,22 @@
 import java.util.Stack;
 
+/**
+ * Checks whether brackets in a string are correctly matched.
+ */
 public class ParenthesisMatcher {
 
+    /**
+     * Creates a parenthesis matcher.
+     */
+    public ParenthesisMatcher() {
+    }
+
+    /**
+     * Determines whether every bracket has the correct matching bracket.
+     *
+     * @param s the bracket string to check
+     * @return {@code true} if all brackets are matched; otherwise {@code false}
+     */
     public static boolean isValid(String s) {
         // Use a Stack to keep track of opening brackets
         Stack<Character> stack = new Stack<>();
