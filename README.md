@@ -1,6 +1,7 @@
-# OOP Judge 2026
+# NTU Object-Oriented Programming 2026 Spring
 
-臺大 114-2 物件導向程式設計課程的 OOP Judge 作業，以 Java 實作。每個資料夾對應一題，資料夾名稱是題號。
+這個 repository 收錄臺大 114-2 物件導向程式語言（黃乾綱老師）課程的 OOP Judge 作業，以 Java 實作。
+每個資料夾對應一題，資料夾名稱是題號。
 
 繳交方式：[`OOP JUDGE 繳交作業步驟說明 2026v1.pdf`](<OOP JUDGE 繳交作業步驟說明 2026v1.pdf>)
 
